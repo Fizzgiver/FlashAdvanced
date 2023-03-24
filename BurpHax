@@ -1,0 +1,342 @@
+function AutoEquipDrink()
+	spawn(function()
+			if not game.Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink") then
+				if not game.Players.LocalPlayer.Character:FindFirstChild("Starter Drink") then
+					game.Players.LocalPlayer.Character:BreakJoints()
+				end
+			end
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 0 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Second Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Third Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1600 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fourth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 3500 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fifth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 10000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Sixth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 25000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Seventh Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 60000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Eighth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Ninth Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 230000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Atomic Drink")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Omega Burp Juice")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1000000 then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			if game.Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz") then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+	end)
+end
+
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local window = kavoUi.CreateLib("Burp Hax","Ocean")
+
+local Tab1 = window:NewTab("Auto Farm")
+local Tab1Section = Tab1:NewSection("Auto Farm")
+local Tab2 = window:NewTab("AntiAfkKick")
+local Tab2Section = Tab2:NewSection("Helps to Afk")
+local Tab3 = window:NewTab("Credits")
+local Tab3Section = Tab3:NewSection("Made By FIZZ_GIVER")
+local Tab3Section = Tab3:NewSection("Thanks To Granny For Help In Auto Equip")
+
+Tab1Section:NewButton("Auto Rebirth","Auto Pestiges for you",function()
+while wait(2.5) do
+		game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
+	end
+end)
+
+Tab1Section:NewButton("Auto Gems","Auto Collect Gems for you",function()
+while wait() do
+		local gem = game.Workspace.Diamonds:WaitForChild("Diamond")
+		local Char = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+		gem.CFrame = Char.CFrame
+	end
+end)
+
+Tab1Section:NewButton("Auto Equip","Auto Equips For You",function()
+while wait(1) do
+    AutoEquipDrink()
+    end
+end)
+
+Tab1Section:NewButton("Starter Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
+	end
+end)
+
+Tab1Section:NewButton("Second Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
+	end
+end)
+
+Tab1Section:NewButton("Third Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
+	end
+end)
+
+Tab1Section:NewButton("Fourth Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Fifth Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Sixth Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Seventh Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
+	end
+end)
+
+Tab1Section:NewButton("Eighth Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Ninth Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
+	end
+end)
+
+Tab1Section:NewButton("Atomic Drink","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
+	end
+end)
+
+Tab1Section:NewButton("Omega Burp Juice","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
+	end
+end)
+
+Tab1Section:NewButton("Thunder Fizz","Auto Drink For You",function()
+while wait(2.41) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
+	end
+end)
+
+Tab2Section:NewButton("Anti Kick","Prevents You From Being Timer Kick",function()
+local mt = getrawmetatable(game)
+	local old = mt.__namecall
+	local protect = newcclosure or protect_function
+
+	setreadonly(mt, false)
+	mt.__namecall = protect(function(self, ...)
+		local method = getnamecallmethod()
+		if method == "Kick" then
+			wait(9e9)
+			return
+		end
+		return old(self, ...)
+	end)
+	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+end)
+
+Tab2Section:NewButton("Anti Afk","Prevents You From Being Afk Kick",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/KHZ8pYx9", true))()
+end)
+
+
