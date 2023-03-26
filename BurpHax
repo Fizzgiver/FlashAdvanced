@@ -220,11 +220,18 @@ local window = kavoUi.CreateLib("Burp Hax","Ocean")
 
 local Tab1 = window:NewTab("Auto Farm")
 local Tab1Section = Tab1:NewSection("Auto Farm")
-local Tab2 = window:NewTab("AntiAfkKick")
-local Tab2Section = Tab2:NewSection("Helps to Afk")
-local Tab3 = window:NewTab("Credits")
-local Tab3Section = Tab3:NewSection("Made By FIZZ_GIVER")
-local Tab3Section = Tab3:NewSection("Thanks To Granny For Help In Auto Equip")
+local Tab2 = window:NewTab("Helper")
+local Tab2Section = Tab2:NewSection("Helps to Afk/Inf yield")
+local Tab3 = window:NewTab("Teleport")
+local Tab3Section = Tab3:NewSection("Helps To Travel Faster")
+local Tab4 = window:NewTab("Update Log")
+local Tab4Section = Tab4:NewSection("Added Teleports")
+local Tab4Section = Tab4:NewSection("Added Speed And Infinite Jump")
+local Tab4Section = Tab4:NewSection("Added Infinity yield")
+local Tab4Section = Tab4:NewSection("Made The Auto Drink Even Faster")
+local Tab5 = window:NewTab("Update Log")
+local Tab5Section = Tab5:NewSection("Made By Fizz_Giver")
+local Tab5Section = Tab5:NewSection("Thanks To Granny For Help In Auto Equip")
 
 Tab1Section:NewButton("Auto Rebirth","Auto Pestiges for you",function()
 while wait(2.5) do
@@ -247,73 +254,73 @@ while wait(1) do
 end)
 
 Tab1Section:NewButton("Starter Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
 	end
 end)
 
 Tab1Section:NewButton("Second Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
 	end
 end)
 
 Tab1Section:NewButton("Third Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
 	end
 end)
 
 Tab1Section:NewButton("Fourth Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
 	end
 end)
 
 Tab1Section:NewButton("Fifth Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
 	end
 end)
 
 Tab1Section:NewButton("Sixth Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
 	end
 end)
 
 Tab1Section:NewButton("Seventh Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
 	end
 end)
 
 Tab1Section:NewButton("Eighth Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
 	end
 end)
 
 Tab1Section:NewButton("Ninth Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
 	end
 end)
 
 Tab1Section:NewButton("Atomic Drink","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
 	end
 end)
 
 Tab1Section:NewButton("Omega Burp Juice","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
 	end
 end)
 
 Tab1Section:NewButton("Thunder Fizz","Auto Drink For You",function()
-while wait(2.41) do
+while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
 	end
 end)
@@ -339,4 +346,91 @@ Tab2Section:NewButton("Anti Afk","Prevents You From Being Afk Kick",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/KHZ8pYx9", true))()
 end)
 
+Tab2Section:NewButton("Infinite yield","Gets You Inf Yield",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab2Section:NewButton("Speed 850","Makes You Run At The Speed Of 850",function()
+while wait() do
+		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 850
+	end
+end)
+
+Tab2Section:NewButton("Infinity Jump","You Can Jump Unlimited Times",function()
+game:GetService("UserInputService").JumpRequest:connect(function()
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end)
+end)
+
+Tab3Section:NewButton("Safe Zone","Teleports You To Safe Zone",function()
+local New_CFrame = CFrame.new(-46, 48, -15)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Pet Shop","Teleports You To Pet Shop",function()
+local New_CFrame = CFrame.new(311, 52, 103)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Disco Island","Teleports You To Disco Island",function()
+local New_CFrame = CFrame.new(63, 48, 636)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Cloud 1","Teleports You To Cloud",function()
+local New_CFrame = CFrame.new(296, 566, 689)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Cloud 2","Teleports You To Cloud",function()
+local New_CFrame = CFrame.new(-1224, 557, -318)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Tab3Section:NewButton("Sky Island","Teleports You To Sky Island",function()
+local New_CFrame = CFrame.new(2132, 1456, -1034)
+
+	local ts = game:GetService("TweenService")
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
 
