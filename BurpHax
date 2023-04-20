@@ -1,4 +1,4 @@
-function AutoEquipDrink()
+ function AutoEquipDrink()
 	spawn(function()
 			if not game.Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink") then
 				if not game.Players.LocalPlayer.Character:FindFirstChild("Starter Drink") then
@@ -261,6 +261,7 @@ local sector24 = section4.new_sector('Disco', 'Left')
 local sector25 = section4.new_sector('Sky Island', 'Right')
 local sector26 = section5.new_sector('Burp Hax Made By Fizz_Giver', 'Middle')
 local sector27 = section5.new_sector('Discord - MissYa#4371', 'Middle')
+local sector28 = section3.new_sector('GiveTool Script', 'Right')
 
 -- // Elements \\ -- (Type, Name, State, Callback)
 local button = sector.element('Button', 'Click', nil, function()
@@ -467,6 +468,75 @@ local New_CFrame = CFrame.new(2132, 1456, -1034)
 	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
 	local tp = {CFrame = New_CFrame}
 	ts:Create(part, ti, tp):Play()
+end)
+
+local button = sector28.element('Button', 'Click', nil, function()
+local GiveToolsGui = Instance.new("ScreenGui")
+local GiveTools = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+GiveToolsGui.Name = "GiveToolsGui"
+GiveToolsGui.Parent = game.CoreGui
+GiveToolsGui.ResetOnSpawn = false
+
+GiveTools.Name = "GiveTools"
+GiveTools.Parent = GiveToolsGui
+GiveTools.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+GiveTools.BorderColor3 = Color3.fromRGB(0, 170, 255)
+GiveTools.Position = UDim2.new(0, 600, 0, 100)
+GiveTools.Size = UDim2.new(0, 200, 0, 50)
+GiveTools.Font = Enum.Font.SourceSansBold
+GiveTools.Text = "GiveTools"
+GiveTools.TextColor3 = Color3.fromRGB(255, 255, 255)
+GiveTools.TextScaled = true
+GiveTools.TextSize = 14.000
+GiveTools.TextWrapped = true
+GiveTools.MouseButton1Click:Connect(function()
+	local v = game.Players.LocalPlayer.Character
+	local Char = game.Players.LocalPlayer.Character or workspace:FindFirstChild(game.Players.LocalPlayer.Name)
+	local hum = Char and Char:FindFirstChildWhichIsA('Humanoid')
+	local hrp = hum and hum.RootPart
+	local hrppos = hrp.CFrame
+	hum = hum:Destroy() or hum:Clone()
+	hum.Parent = Char
+	hum:ClearAllChildren()
+	game.Players.LocalPlayer:ClearCharacterAppearance()
+end)
+
+UICorner.Parent = GiveTools
+UICorner.CornerRadius = UDim.new(0, 8)
+
+local input = game:GetService("UserInputService")
+
+  local dragging = false
+    local dragInput, mousePos, framePos
+
+    GiveTools.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+            dragging = true
+            mousePos = input.Position
+            framePos = GiveTools.Position
+            
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+
+    GiveTools.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement then
+            dragInput = input
+        end
+    end)
+
+    input.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            local delta = input.Position - mousePos
+            GiveTools.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+        end
+    end)
 end)
 
 
