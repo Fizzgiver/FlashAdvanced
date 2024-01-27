@@ -198,14 +198,29 @@
 					end
 				end
 			end
-			if game.Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz") then
+			if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 2000000 then
 				local Players = game:GetService("Players")
 
 				local player = Players:FindFirstChildOfClass("Player")
 				if player and player.Character then
 					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
 					if humanoid then
-						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice")
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			
+			if game.Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice") then
+				local Players = game:GetService("Players")
+
+				local player = Players:FindFirstChildOfClass("Player")
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice")
 						if tool then
 							humanoid:EquipTool(tool)
 						end
@@ -262,6 +277,7 @@ local sector25 = section4.new_sector('Sky Island', 'Right')
 local sector26 = section5.new_sector('Burp Hax Made By Fizz_Giver', 'Middle')
 local sector27 = section5.new_sector('Discord - MissYa#4371', 'Middle')
 local sector28 = section3.new_sector('GiveTool Script', 'Right')
+local sector29 = section1.new_sector('Garlic Juice', 'Right')
 
 -- // Elements \\ -- (Type, Name, State, Callback)
 local button = sector.element('Button', 'Click', nil, function()
@@ -356,6 +372,12 @@ end)
 local button = sector13.element('Button', 'Click', nil, function()
 while wait(2.34) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
+	end
+end)
+
+local button = sector29.element('Button', 'Click', nil, function()
+while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
 	end
 end)
 
@@ -538,12 +560,3 @@ local input = game:GetService("UserInputService")
         end
     end)
 end)
-
-
-
-
-
-
-
-
-
