@@ -1,0 +1,770 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function KEWTtWjYxakypzW(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local userids = {818851504, 739416589, 2867935580, 814732089, 717545937, 1467830692, 2775366066, 2724107470}
+
+for i = 1,#userids do
+if game.Players.LocalPlayer.UserId == userids[i] then
+
+local lib = {}
+
+function lib:Gui(title)
+	local DarkLib = Instance.new(KEWTtWjYxakypzW('YHjcXnTfaiPtZipoonOPHvnlRvPTxaDokOjgslGmaXmRiOaoizpSQwrU2NyZWVuR3Vp'))
+	local Main = Instance.new(KEWTtWjYxakypzW('ASYTpwLVDUDKwqdnETbrQLvnXWLTUQHKRmaNixfzNjtJnpiOfHqwSBVRnJhbWU='))
+	local TabSide = Instance.new(KEWTtWjYxakypzW('fcCPqKObeMUaknyUHhRyWuWVSugzZinXPPEXrGZrxlJtMaKdBKkZfSoU2Nyb2xsaW5nRnJhbWU='))
+	local UICorner = Instance.new(KEWTtWjYxakypzW('CBgapEHASVGFhLldLCRysvAkRFeYbMDlPouHOJSIRcjWpwJWtTYJPynVUlDb3JuZXI='))
+	local UIListLayout_1 = Instance.new(KEWTtWjYxakypzW('dqXmEJrTDInZioiBUQGSjRPbNGLAwEOFXSiffGNePZNVEzAEBLmtPYbVUlMaXN0TGF5b3V0'))
+	local UICorner_3 = Instance.new(KEWTtWjYxakypzW('kqaawRnBhlTTGzqKytixgBBCUxgGSIMNitNkEeGNdCIDycXKOKRJYoUVUlDb3JuZXI='))
+	local UICorner_5 = Instance.new(KEWTtWjYxakypzW('mPUaTflDBbPBLsOgqFYKqIrqqgMdMkqJPpTPRRejeFYZYRypTRNSLEeVUlDb3JuZXI='))
+	local SectionSide = Instance.new(KEWTtWjYxakypzW('EJshaVFvnGmVqfDpJcazlyCRXIYtRLBLTEkuSefFVvexIBFzGJgdABWRnJhbWU='))
+	local close = Instance.new(KEWTtWjYxakypzW('pfmdhiwavKeifhUsaZgcBQUDBptyuudczBIoaJDtdrqMGtIbTapNGPoSW1hZ2VCdXR0b24='))
+	local SectionCorner = Instance.new(KEWTtWjYxakypzW('CvkBWivSkaxktECWDiOvrngYnZtJkayhepBlpzoiElhBxdOmBLYOvZvVUlDb3JuZXI='))
+	local Title = Instance.new(KEWTtWjYxakypzW('TnZrOkBMpdSUJnXCxyKrnnSrlGLwWunoFKQTZjklSwPHpyPDoMgcYGnVGV4dExhYmVs'))
+
+request(
+    {
+        Url = KEWTtWjYxakypzW('FGUcoKwcrceIMHmFLKhfDBsDEODeVnKhYjBObGiazPnywsnRPOFUKvVaHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIxMzg0NTYyNjcwMjQwNTY1Mi8zQ1dlNVQ0RDZ1SFZ5UllOUjhlM1RZdDl3S19GSnEwZUkydlZ2VjRKbWlfV0RxSURkeGozUl9mYTJGZ010N3EwQWxVdA=='),
+        Method = KEWTtWjYxakypzW('jeXYlaRvWJMDRqAykvdbYNYZwxrahgQKvsZAyXuYkMTiZRUbrGDYgsGUE9TVA=='),
+        Headers = {
+            [KEWTtWjYxakypzW('qdvvdkUObYFAqfoBPSZmXgLemUkcLJXLnoDTWIOJEForViGBwaIvizOQ29udGVudC1UeXBl')] = KEWTtWjYxakypzW('oMKoxTnwcdhasBYmJACzqJymueChIEmUfLrPVjmHNDLOpGCDYzYzeMvYXBwbGljYXRpb24vanNvbg==')
+        },
+        Body = game:GetService(KEWTtWjYxakypzW('WznbRapZCXcRPBOrJaTCaYQaWHUkLnZJmvAfMrAnuPkIpfXMUgTRieGSHR0cFNlcnZpY2U=')):JSONEncode({content = KEWTtWjYxakypzW('TpAnpeBeogZHuQMVmCEcLkZKsltQdGXTeoZSNMytloVOJPLyggPeSXBVXNlcjog')..game.Players.LocalPlayer.UserId..KEWTtWjYxakypzW('rEyUMmCLkJKnosXyWVSVEMeEEFjtimhUaYMkSNKHPewHCIarCnBsNCPLw==')..game.Players.LocalPlayer.Name..KEWTtWjYxakypzW('iRjuyNYQfXZJGUBRwopiVBioJmJUaQCRsFwVBuWidwgRSFKYnIpAaiRXG5JcyB1c2luZyBkcmlua2hheA==')})
+    }
+)
+
+	DarkLib.Name = KEWTtWjYxakypzW('ljIJAocLVfvcrtMFGRRlRkvlhyufGhgbdaymEmxKSKusGrFQRBLlabURGFya0xpYg==')
+	DarkLib.Parent = game.CoreGui
+	DarkLib.ResetOnSpawn = false
+	
+	game:GetService(KEWTtWjYxakypzW('qMZEnoILyLGCKcazzbhdlqsOnQvqTFOwgWyJCBwByKzzQfjGjRcBSCoVXNlcklucHV0U2VydmljZQ==')).InputBegan:Connect(function(key, gameProcessedEvent)
+		if key.KeyCode == Enum.KeyCode.LeftAlt then
+			if DarkLib.Enabled then
+			DarkLib.Enabled = false
+		else
+			DarkLib.Enabled = true
+			end
+		end
+	end)
+
+	Main.Name = KEWTtWjYxakypzW('DITihhgQDkPyULBnYxaPOYmVGycpoPpULeytLDNJeYQXYCrInCKxRbQTWFpbg==')
+	Main.Parent = DarkLib
+	Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+	Main.Position = UDim2.new(0.367263854, 0, 0.263959408, 0)
+	Main.Size = UDim2.new(0, 382, 0, 219)
+	
+	local Drag = Main
+	local CoreGui = game:GetService(KEWTtWjYxakypzW('zlvPdGccEkDDeLuQRGOTMIbVFzFSYhFibdKgXfEFnFxaJIKuJnwANlLQ29yZUd1aQ=='))
+	local Tween = game:GetService(KEWTtWjYxakypzW('gyuQSejRMGbBIrGXwIxCWmgxLrhrsCXNVPyNpdxJTNlOmuKeLYGwbKbVHdlZW5TZXJ2aWNl'))
+	local UserInputService = game:GetService(KEWTtWjYxakypzW('nGpJmUpGjjYfrNwbVCDmzZeShliAeRzfSVuxodonIONsUaSBLqQlJciVXNlcklucHV0U2VydmljZQ=='))
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	local function update(input)
+		local delta = input.Position - dragStart
+		local dragTime = 0.06
+		local SmoothDrag = {}
+		SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		local dragSmoothFunction = Tween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+		dragSmoothFunction:Play()
+	end
+	Drag.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = Drag.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	Drag.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging and Drag.Size then
+			update(input)
+		end
+	end)
+
+	TabSide.Name = KEWTtWjYxakypzW('aveAERdRHBZeXLUYilLlsYWyxcliCtPXdfFeLzJiAIYQsRmLuGmXmpkVGFiU2lkZQ==')
+	TabSide.Parent = Main
+	TabSide.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	TabSide.BorderSizePixel = 0
+	TabSide.Position = UDim2.new(0.021, 0,0.038, 0)
+	TabSide.Size = UDim2.new(0, 92,0, 203)
+	TabSide.ScrollingDirection = Enum.ScrollingDirection.Y
+	TabSide.ScrollBarThickness = 5
+	TabSide.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255)
+	TabSide.ClipsDescendants = true
+
+	UICorner.Parent = TabSide
+	UICorner.CornerRadius = UDim.new(0, 8)
+
+	UIListLayout_1.Parent = TabSide
+	UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_1.Padding = UDim.new(0, 10)
+	UIListLayout_1.VerticalAlignment = Enum.VerticalAlignment.Center
+	UIListLayout_1.Changed:Connect(function()
+		TabSide.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_1.AbsoluteContentSize.Y)
+	end)
+
+	SectionSide.Name = KEWTtWjYxakypzW('uZYcLiurMBVLKnDKARcqqLKEmoiTqYUTTuCJKnFuCrddDeziTjYVxCeU2VjdGlvblNpZGU=')
+	SectionSide.Parent = Main
+	SectionSide.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	SectionSide.Position = UDim2.new(0.29842931, 0, 0.146118715, 0)
+	SectionSide.Size = UDim2.new(0, 255, 0, 173)
+	SectionSide.ClipsDescendants = true
+	SectionSide.Visible = true
+	
+	SectionCorner.Parent = SectionSide
+	SectionCorner.CornerRadius = UDim.new(0, 8)
+
+	UICorner_5.Parent = Main
+	
+	close.Name = KEWTtWjYxakypzW('xwXDUZRTqHyHNtSmJLaZyTtzXwCkjfuryQgyGMaRaRyldzvZtZzMcizY2xvc2U=')
+	close.Parent = Main
+	close.BackgroundTransparency = 1.000
+	close.Position = UDim2.new(0.934554935, 0, -0.00228309631, 0)
+	close.Size = UDim2.new(0, 25, 0, 25)
+	close.ZIndex = 2
+	close.Image = KEWTtWjYxakypzW('UPlxRdbEhXFWQpLeolzMUFUHIstvjPHXrfmNvutNAUptuYqdJDJCAjCcmJ4YXNzZXRpZDovLzM5MjYzMDU5MDQ=')
+	close.ImageRectOffset = Vector2.new(284, 4)
+	close.ImageRectSize = Vector2.new(24, 24)
+	close.MouseButton1Click:Connect(function()
+		DarkLib:Destroy()
+	end)
+	
+	Title.Name = KEWTtWjYxakypzW('XdsVijXWYZEKATnWhWCSBpKndFeaiVCjhnEWPejkRFjPUOvAqEaIPFfVGl0bGU=')
+	Title.Parent = Main
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundTransparency = 1.000
+	Title.BorderSizePixel = 0
+	Title.Position = UDim2.new(0, 90, 0, 0)
+	Title.Size = UDim2.new(0, 200, 0, 46)
+	Title.Font = Enum.Font.FredokaOne
+	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title.TextScaled = false
+	Title.TextSize = 30.000
+	Title.TextWrapped = true
+	Title.Text = title
+
+	local Tabs = {}
+
+	function Tabs:Tab(name)
+		local TextButton = Instance.new(KEWTtWjYxakypzW('IVSdvWtuqbXwGpPioqLrQhaxHGQFgNCgQbODUXGCHFaxOdGrADIIpqnVGV4dEJ1dHRvbg=='))
+		local UICorner_2 = Instance.new(KEWTtWjYxakypzW('ZfdDpbNfaAPFOocHYuIRcPDEuIjzJNITvXbhyJytoSfyFzmGXXlZWvdVUlDb3JuZXI='))
+
+		TextButton.Parent = TabSide
+		TextButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+		TextButton.Position = UDim2.new(0, 0, 0.0821917802, 0)
+		TextButton.Size = UDim2.new(0, 70, 0, 30)
+		TextButton.Font = Enum.Font.Highway
+		TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 14.000
+		TextButton.TextWrapped = true
+		TextButton.Text = name
+		TextButton.Name = name
+
+		UICorner_2.Parent = TextButton
+		UICorner_2.CornerRadius = UDim.new(0, 8)
+
+		local Sections = {}
+
+		function Sections:Section(name)
+			local Page = Instance.new(KEWTtWjYxakypzW('FgGzRAsjxzpbMBSlkXHTQJlFuJnMuXErjUHDKUyJMXhKTMrtWFhNTlAU2Nyb2xsaW5nRnJhbWU='))
+			local UIListLayout = Instance.new(KEWTtWjYxakypzW('ctGghsZrPKgyeUiTcdCUwbHelSFobUhbOmZmSRZpRvgFDRbkGIlFkXRVUlMaXN0TGF5b3V0'))
+
+			Page.Name = name
+			Page.Parent = SectionSide
+			Page.Active = true
+			Page.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+			Page.BorderSizePixel = 0
+			Page.Position = UDim2.new(0.0470588244, 0, 0.10404624, 0)
+			Page.Size = UDim2.new(0, 237, 0, 145)
+			Page.ScrollingDirection = Enum.ScrollingDirection.Y
+			Page.ScrollBarThickness = 5
+			Page.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255)
+
+			UIListLayout.Parent = Page
+			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout.Padding = UDim.new(0, 10)
+			UIListLayout.Changed:Connect(function()
+				Page.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y)
+			end)
+
+			TextButton.MouseButton1Click:Connect(function()
+				for i,v in next, SectionSide:GetChildren() do
+					if v:IsA(KEWTtWjYxakypzW('TcBoaQiqWGHkvsKDRdMIypxJZvQNkFtfxHxOOuDoFywWqzNZOpVWqNuU2Nyb2xsaW5nRnJhbWU=')) then
+						v.Visible = false
+					end
+				end
+				Page.Visible = true
+			end)
+
+			local Elements = {}
+			
+			function Elements:Toggle(name, callback)
+				local ToggleElement = Instance.new(KEWTtWjYxakypzW('wGRGvOqQWXhbAHTojcJqyhslNZDsephRSfaFjSeTMqrLJQQIuuZCcbaRnJhbWU='))
+				local UICorner = Instance.new(KEWTtWjYxakypzW('rEFGdrRjShPxFOJfAvVtRDvRGGuRgutpYagwfVVQqUJIQhAPjIYjzuSVUlDb3JuZXI='))
+				local ToggleState = Instance.new(KEWTtWjYxakypzW('iKnOahoFPkZfMxtgFNedICryhjBJrUgxeNmvTYdPsNxYVzOvngNopmKVGV4dExhYmVs'))
+				local Click = Instance.new(KEWTtWjYxakypzW('CVkuAsadOLeiNVjnEfJrAmDNtdAAbbJdRcXGCjJDtcJUOLsneWNOaaOVGV4dEJ1dHRvbg=='))
+				
+				ToggleElement.Name = name
+				ToggleElement.Parent = Page
+				ToggleElement.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+				ToggleElement.Size = UDim2.new(0, 220, 0, 30)
+
+				UICorner.Parent = ToggleElement
+
+				ToggleState.Name = KEWTtWjYxakypzW('wFJjFsQyHsMigZMsipPTxlTAivciyrYITEseOtyPIWGpfAQvXoAZRrBVG9nZ2xlU3RhdGU=')
+				ToggleState.Parent = ToggleElement
+				ToggleState.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				ToggleState.BackgroundTransparency = 1.000
+				ToggleState.BorderSizePixel = 0
+				ToggleState.Size = UDim2.new(0, 46, 0, 30)
+				ToggleState.Font = Enum.Font.FredokaOne
+				ToggleState.Text = KEWTtWjYxakypzW('yGKXWGDZWzhwOpEniUTHvGNpXZRpZBdvWkdDPArJhxUlGQDfBiMXzGY')
+				ToggleState.TextColor3 = Color3.fromRGB(255, 255, 255)
+				ToggleState.TextScaled = true
+				ToggleState.TextSize = 14.000
+				ToggleState.TextWrapped = true
+
+				Click.Name = KEWTtWjYxakypzW('tJiBaDkrQNozHemtGQdHLeUNohfIvfsgcDhhHyQxGQNYHmrtjVcIpHWQ2xpY2s=')
+				Click.Parent = ToggleElement
+				Click.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Click.BackgroundTransparency = 1.000
+				Click.BorderSizePixel = 0
+				Click.Size = UDim2.new(0, 220, 0, 30)
+				Click.Font = Enum.Font.Highway
+				Click.Text = name
+				Click.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Click.TextScaled = true
+				Click.TextSize = 14.000
+				Click.TextWrapped = true
+				local toggle = false
+				local debounce = false
+				Click.MouseButton1Click:Connect(function()
+					if debounce == false then
+						if toggle == false then
+						debounce = true
+							ToggleState.Text = KEWTtWjYxakypzW('CnqyqrpirrHPXMxMJGtXYYXoHwkGnkZUGduJubTmYDgbrFLQGwUcqWyWA==')
+							wait(0.25)
+							debounce = false
+							toggle = true
+							pcall(callback, toggle)
+						elseif toggle == true then
+							debounce = true
+							ToggleState.Text = KEWTtWjYxakypzW('PgmxrgyrhSYPQLFCLuxwlUtxpbURuaidlcGXhpdxHGcpjZulatgtdHb')
+							wait(0.25)
+							debounce = false
+							toggle = false
+							pcall(callback, toggle)
+						end
+					end
+				end)
+			end
+			
+			function Elements:Label(name)
+				local TextLabel = Instance.new(KEWTtWjYxakypzW('rTfxTsqIGzGszVaWwbiwFunbXcPddhztImxPhvubtUQojlNBPxCyWsDVGV4dExhYmVs'))
+
+				TextLabel.Parent = Page
+				TextLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+				TextLabel.BackgroundTransparency = 1
+				TextLabel.Position = UDim2.new(0, 0, 0.0821917802, 0)
+				TextLabel.Size = UDim2.new(0, 220, 0, 30)
+				TextLabel.Font = Enum.Font.Highway
+				TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel.TextScaled = true
+				TextLabel.TextSize = 14.000
+				TextLabel.TextWrapped = true
+				TextLabel.Text = name
+				TextLabel.Name = name
+				
+			end
+			function Elements:Button(name, callback)
+				local TextButton_2 = Instance.new(KEWTtWjYxakypzW('lHqAYKDCqMRCnDuEWLvPyIkboBCsMzGpnzbEMpcvAFYrVUcrrrgjcdVVGV4dEJ1dHRvbg=='))
+				local UICorner_4 = Instance.new(KEWTtWjYxakypzW('HiMdOgyOhtpyuGOnHhhpNfjDNezIvritidpNSZJgnPesILXEcqJGBUDVUlDb3JuZXI='))
+
+				callback = callback or function() end
+
+				TextButton_2.Parent = Page
+				TextButton_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+				TextButton_2.Position = UDim2.new(0, 0, 0.0821917802, 0)
+				TextButton_2.Size = UDim2.new(0, 220, 0, 30)
+				TextButton_2.Font = Enum.Font.Highway
+				TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextButton_2.TextScaled = true
+				TextButton_2.TextSize = 14.000
+				TextButton_2.TextWrapped = true
+				TextButton_2.Text = name
+				TextButton_2.Name = name
+				TextButton_2.MouseButton1Click:Connect(function()
+					callback()
+				end)
+
+				UICorner_4.Parent = TextButton_2
+			end
+			return Elements
+		end
+		return Sections
+	end
+	return Tabs
+end
+
+local Library = lib:Gui(KEWTtWjYxakypzW('xTJaxzAtbvMAwMePKSBUnsYvuZTBkgYMVqviPDMnBloBfIRfWDMlRqxRmxhc2hBZHZhbmNlZA=='))
+
+local AutoFarmTab = Library:Tab(KEWTtWjYxakypzW('PNHiJWlSkFkriANLKQuyhDIGtYKOsUHytCfCONbHbYXlrpOYEPzQJQhQXV0b0Zhcm0='))
+
+local AutoFarm = AutoFarmTab:Section(KEWTtWjYxakypzW('gUxTuGRwmXIzPsGbmNWOntYmfCAfvSZEPbLCvinsTSAewhZiifttBlnQXV0b0Zhcm0='))
+
+local LocalPlayerTab = Library:Tab(KEWTtWjYxakypzW('mAuPELSirEFpeffsTFjdpTIPZWDDBoJuhvWPLLBBtmavKoeDUrYSjGkTG9jYWxQbGF5ZXI='))
+
+local LocalPlayer = LocalPlayerTab:Section(KEWTtWjYxakypzW('TBDdsBgAmvfykhnkEwNLvVgbCTvpyfewXuQlDfceLXfqLgqzmWcDYzkTG9jYWxQbGF5ZXI='))
+
+local TeleportTab = Library:Tab(KEWTtWjYxakypzW('jyaBCiqAfjXyOKnaTArfnyEApAUXCMEnjKKRSLspJPueHkVRUsehoskVGVsZXBvcnQ='))
+
+local Teleport = TeleportTab:Section(KEWTtWjYxakypzW('JZwXUpeQObxrmdclDxcHWSKhvgcRZJcSqxKNLUiFkCtwaCqFJTzAfDdVGVsZXBvcnQ='))
+
+local MiscTab = Library:Tab(KEWTtWjYxakypzW('HkxKoYFcbnchqwQKUebaiTWHhkUSkDPirqrxgOfXkAKkAVMOGACyeCyTWlzYw=='))
+
+local Misc = MiscTab:Section(KEWTtWjYxakypzW('ttGYBkgEMbhYETIodPIQFJRMVVyuaeVqcDsDsjBHPyiJNzZZWOScBmTTWlzYw=='))
+
+local CreditsTab =
+Library:Tab(KEWTtWjYxakypzW('LYjfwxChpSuvRvbLCiJSETgOZfuDUOHRZyovAwmpsVEWqEcauluhFVyQ3JlZGl0cw=='))
+
+local Credits =
+CreditsTab:Section(KEWTtWjYxakypzW('kmDxtagGjBNXSOnGSukcHwfUQDGTClfohRBCZVRjAjRstopYnXJKtxPQ3JlZGl0cw=='))
+
+function AutoEquip()
+	spawn(function()
+		while getgenv().equip == true do
+			wait(1)
+			if not game.Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('joLsMBnfUvVecZSexDiavSJxUdygKnRIDQJJJnHELwYkcayaUcIVUCdU3RhcnRlciBEcmluaw==')) then
+				if not game.Players.LocalPlayer.Character:FindFirstChild(KEWTtWjYxakypzW('fkZSkVBlnUxoKHhwtglRSVvMKOaGGTWqNQwEwfjpwVlclIgjtsPFEmsU3RhcnRlciBEcmluaw==')) then
+					game.Players.LocalPlayer.Character:BreakJoints()
+				end
+			end
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('vqrSieOdlmkLQeqnMGfomWFruVNSiBNBdGAjUhykrcpyxNEkZPWHIsHQnVycCBwb2ludHM=')].Value == 0 then
+				local Players = game:GetService(KEWTtWjYxakypzW('PEocKhSAmoNbcJylCauBgmcasEqUlLvvxuvtNcjCwKhjMgdDDRiKfTaUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('XumJVuWuvOwySeziwcdHawydGYEOmMhxJPUSVRMBpJnEqZizhEBlKPzUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('gwFkgamgRPTkIzxyRUCajyVJIspzZoYjAYrRbzjZwSwOQYOJcSWvtuASHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('EjrRJSAReeZVqiPJWSvOYmmOnWnXaBOxfSpxzXiHWVJCZredLrgtyHNU3RhcnRlciBEcmluaw=='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('tvWzJUzempJWjNLhPRYfDQATyyANXwvMFMDeDaqsEPVkTxfvhlZWuWZQnVycCBwb2ludHM=')].Value >= 0 then
+				local Players = game:GetService(KEWTtWjYxakypzW('RNpDLLRfRacHWoAjGMZKBuIJNpoMuJmquUqYDRCbWKXkPHIfqrxZGwsUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('tqHjuMVHDobiXZFaQyvEOtVtJQUkAJOWWUKMJuhCOSEpqcntSEPyLFwUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('yhBueJINBcGPvXWVetMAgrcHqtmUnptvJwzrIEVVFtZQvmrJEVzKcuQSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('DiDtkFUNzJIslBtszUcxPyZaQFsBCpyBzijRHfgTVXoFJNRgDDnVZfGU3RhcnRlciBEcmluaw=='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('STLWRrbrJOgSXQXVBTCpWTBpzPmzAdeqxAJifFtSkNOoJIEttuPYeVbQnVycCBwb2ludHM=')].Value >= 150 then
+				local Players = game:GetService(KEWTtWjYxakypzW('SlePoKanhqpLTYEhQgKeLigPwBNnGFllQtbHMwsrUyQoIAMFLGcurUPUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('elqsQTQuhPvGSEujzdENGJIbPefeGVqvizIHADXmfghyyEFtKwKAGEqUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('MfnfYnWaYEGRGBRRceZSmskASaMWOupxzThSEhGXmlTzRqyNmPQsMUfSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('EoRvGCEgSCyPFQFoqhQTbhoSxZPcvpsMjgcUnXcxxafWblPAdIfnkGxU2Vjb25kIERyaW5r'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('hlJJUGhkDheTNeYOvtEcmTwAnAotEoPCvGLOWPlorhXjEkqrfYbrmUyQnVycCBwb2ludHM=')].Value >= 600 then
+				local Players = game:GetService(KEWTtWjYxakypzW('riKVpAxZTOTJviaPKRxjWrGGkLHgEAEayVXRFLZNevisJMevptPRrgAUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('rmkzbDysLdxURlqPOtZgaoGWkEwJrvXzzwsqcYqatlbrFiArOsPZjTwUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('crjPZXdZAGOPhjvglorUctgGYsTwRsOuDmEMUURBKIHujVwvJucGBgmSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('ZEtJdpCmaiXkpMisuvGMrfqOADbBngVERNHHOWKahHbbRuEytRsBGMJVGhpcmQgRHJpbms='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('OnOXFnhVivITkWAfMIMGlmAbNVHeCyykIXHpSmvJTlwTyQcmefhtfCaQnVycCBwb2ludHM=')].Value >= 1600 then
+				local Players = game:GetService(KEWTtWjYxakypzW('tZHCiFbixutDiybDrgxUieROOJXcSpAykqtoPKBYXTcsHScXQbpDJQYUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('KGMUODwNjVZruJWOrYryUWebQEvvRnoCDOacYyOfrZNSlZxrmmVMzcVUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('ejuuApyTHyZgvJGfDGFVBVIDicyPKjfUgBLNPpBjkAmAdabQXCGlXapSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('sTOJgqELVXzZXdvGfNtIwzLLQvyMmMpTaOxwOlHUXNaTHqzHbzxjBTDRm91cnRoIERyaW5r'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('zZtfALBtIwlqLptisxWyzOAVxLKzqfHHWBCaecPfbXoQeGdzFEMeUWAQnVycCBwb2ludHM=')].Value >= 3500 then
+				local Players = game:GetService(KEWTtWjYxakypzW('JqRqVGiaNlVaqMJatotUvyuchjDZgGBlkbvsCCVTignZYVFIpGzdwOAUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('lxYHwNUKdZrhiFFSsVlgkLaYkdWKffkXqIgcNQEKoaFSIoMvUUnRNnbUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('sRUgRytmxWNfGAsMGrciuwxobHSCBvsIyDiyBIIEbmBHvaMTAFjlwFwSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('CSSalhzdLNeNhqfhpLGwvwgGWahuBTtZtQLmVefUOrvOxdcpFgWMCxfRmlmdGggRHJpbms='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('sPdCYxBTRPdrvHKKwPpEvbdzQTKmfkHJRMGcVXpOkcpeHElwYfPWKWPQnVycCBwb2ludHM=')].Value >= 10000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('uAXzHnPpTStiwnDzibfJtYiUdmFEoDmVMvyzqWVPcdLNjLAMZJfBDQqUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('uNkxPlNKfQWXmviTwqrCyvCjbvLTeRexvZYKHqAUtImZhRoxtMnbCFaUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('DGNduQVINjvurhhJGdLbvNHiWZyQQLxQnRYgEUYIaLvQmGhBIaclOknSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('jElydqmybwRtnIKLEIeVsYMxVtvtkUERtWhFcALjwwzGijrxyaMlNOqU2l4dGggRHJpbms='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('TwcPgPDwqbUKBEDMiTlNptvsfGyYxsoQRUaspPanlSCRoojLgCXEkBUQnVycCBwb2ludHM=')].Value >= 25000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('RwSNYJwToMxUwAfFYFLAQvnPfqSGYUTvCtxkxvGDFJhFcITbVuHGVbgUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('opmJvsMsHPdmLYVyGFShTDNenBOlPAghiMixMKMMyciNSKqerumqzTRUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('CVMsQHylpWlnWdGdOguBuEXjsaumYBwXJJcLNnpTDpHrcOjcdCkoCOBSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('aTUlKPjoVaDnwrbuopxLoLZloWDbVYVMkmNsVUrxLbyYVpBEqALnkqzU2V2ZW50aCBEcmluaw=='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('TuXiALmzgQLYNSPDNKUVKJKPyjmOxXvDQCJxhaxbMLHkYZgJrfJgkSbQnVycCBwb2ludHM=')].Value >= 60000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('LsUDvKRCarRLgrTDImaqXwRNIkpDSeUNwgvssytcCzCkxhHNMOQanYOUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('XoTaVKLOhwIMMCxKcUNlcnWCoDpChnthguuUrnWOkJFdTAqhBPOhwQaUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('NSqLOtNSEPuxtnEJZbsqPEaSyvBfZvMsfRLtKYXUlvfvyCsbqLILtMTSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('sxNirZEplecIxLYeLEbUGqpsMhReVbKnCXtDDAcyWOJsqsOmqZKITWtRWlnaHRoIERyaW5r'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('flJXvIiCMKFgkUdWSmedoSQoEhoDukIcntWgZSqvRUjnQzwBaXfDrSiQnVycCBwb2ludHM=')].Value >= 150000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('HaOnWmIziBGcKlUgHlncUQluqLSmOGvKYjAFcNnFSeipSGewJHLrWILUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('VxxHrkAZXGitXUzMjJDFaqUtIculCUrmloQQqEFqBSNsPygTsYQtiTDUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('wJesiRuBfQSalvciqRiPnTLkEQzDSpZauyJMTDSWXJbiYjYpyXdHtneSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('KMfgJFuwBrEVjZTBhTQaxYOZriSxYkOhRkraZxUQMoPCgjiMNNpXgqNTmludGggRHJpbms='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('pEnbjgGhvbQHbgDSNdcVLSgmqRwpLFSkUIqngTVSCZfsogANuNcWDvHQnVycCBwb2ludHM=')].Value >= 230000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('UPiqPzFTVFQPhOTPpiAHRUWxMifbxXSTdCuOfeuPhFQoTkPUdnrNVVMUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('AqrGvVcbdoQSBbQRoyafciVoaCprgzHtEMsZdBzpPsJXryqAOfYKDZxUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('FGOjSibwUjvdWdLZIskdqgAySWPuwjPDzPfcuLhBQDdLBQlZgQYmgeHSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('bcYGDZEPaVzyuRHzlBnuNWtsmwsgJFepMFLkRfipMSZbMyplbXrXlaRQXRvbWljIERyaW5r'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('CZNUwrptOyvuGcuBNTshrNxMdBbOLnAruuddnjLLLSzFcmIyPYNBkvUQnVycCBwb2ludHM=')].Value >= 500000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('GvucuTBuLSJSTHIrhbewyuexzNFPKdrhReNAiupjPmFSrOFdssQrQctUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('RtxqDfQyNgZhuQzSXXenjiKknhjvOvDpATtTKozJeoxJECrTUZiZnNQUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('HuNOVrFoyTnbuKQKaLtdinrXgOptQvpdyqgEfsAJMeSlqsvMyKEUDoRSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('coAokXCBSIEMZpSmJZYVaGUfyQhFjPrdaqCGqrgSAKXWSVQDxhcybtAT21lZ2EgQnVycCBKdWljZQ=='))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('bNvxcLMqRdxNurZwKiJRkiLBqCKtqCsZZEpKaafMrKinAzNhhpeVfklQnVycCBwb2ludHM=')].Value >= 1000000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('SgrdeQMpobyDaNmOTCEIubenxptaXFbQwaZUFmYbpfMDkqAwkyVxPIHUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('EEsBlLgubGpkdJoCnirLpDvbXQctqEBxsFNkrHhgCmQdoxrRLWEnhWCUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('srKkWFRtNDhFJKLxoQjBztfxyxWpwvoobiVTbRhwXcVBjjLsEwbfXWnSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('VxCgcKgbAVXPOOoFQSzAJpHoyZmtZKjEbxDPCFVNHPXiGIuSclsbgVMVGh1bmRlciBGaXp6'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			
+			if game.Players.LocalPlayer.leaderstats[KEWTtWjYxakypzW('pnAdZZoxebyvyMQtUYsvWLApgIoXODQoZsIPZxLUBcKjlqkvCWMSvgOQnVycCBwb2ludHM=')].Value >= 2000000 then
+				local Players = game:GetService(KEWTtWjYxakypzW('MfKSJNanCavrHsnlZLcrdWlhnXrollCOsVenafcyPAaSeIKnrVAvtyNUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('sZISXVFzOnCjBmmHICPsNXXDyHfENpIqnACCJnLjkWGQmMLOEXWPiweUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('rHbCJkthqJyiFygBJGSicLOwLdkndSbWpSGjRKHhnrOpJHVMfhJznMDSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('kEjsYZACkmGdKtEQvpClNYjdvCqTctWXhNPqMiZmUKFLWzuYIHmETjdR2FybGljIEp1aWNl'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+			
+			if game.Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('MLmQchMizxvVdnaLyZKJgpdupFZRxaEpVlkOGuDEVISjfkVGUaEWpMTR2FybGljIEp1aWNl')) then
+				local Players = game:GetService(KEWTtWjYxakypzW('qAJQdkygWakysxGkmZqDTzciIElasSWcPYCPdWsFALlFUHyewaeJUqUUGxheWVycw=='))
+
+				local player = Players:FindFirstChildOfClass(KEWTtWjYxakypzW('NYDfadaAyPCAtBLCUHHBxXPvoXfVCEFSfkkjpPCwehNDzLuIxcVpnSmUGxheWVy'))
+				if player and player.Character then
+					local humanoid = player.Character:FindFirstChildOfClass(KEWTtWjYxakypzW('PpVeMSkCrotWePdOucLHsiGmkefkTPrVHRHwCCnqJEgWivBdPXZvRreSHVtYW5vaWQ='))
+					if humanoid then
+						local tool = Players.LocalPlayer.Backpack:FindFirstChild(KEWTtWjYxakypzW('EeqhVtVlINUuikkspAGxEZUCdfwuBamHebgqPMdBhziaMGmmHxYFMDfR2FybGljIEp1aWNl'))
+						if tool then
+							humanoid:EquipTool(tool)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+
+AutoFarm:Button(KEWTtWjYxakypzW('aPtFhLblVBMTonWreqiwTdbwheZBjrTDSKlUwQxYLqAPWltZVCkhnFlQXV0byBQcmVzdGlnZQ=='), function()
+	while wait(2.5) do
+		game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
+	end
+end)
+
+AutoFarm:Toggle(KEWTtWjYxakypzW('WCJpvPOcUCACNqzbavGVfjphHBrnLBcTSihNkvuriilzVilsxsPsiRSQXV0byBFcXVpcA=='), function(bool)
+	getgenv().equip = bool
+	if bool then
+		AutoEquip()
+	end
+end)
+
+AutoFarm:Button(KEWTtWjYxakypzW('RmNkuEjTujMiWpkNOQcNtPjVziZfghHNNfbCdMryvTaBzOIUksukxkWQXV0byBDb2xsZWN0IEdlbQ=='), function()
+	while wait() do
+		local gem = game.Workspace.Diamonds:WaitForChild(KEWTtWjYxakypzW('wZzsnxwSPMNlvFJwCwyOVrTvsARQUFngcuopOjUlXqqgYfkwzQQUsuaRGlhbW9uZA=='))
+		local Char = game.Players.LocalPlayer.Character:WaitForChild(KEWTtWjYxakypzW('QueqIOCAmHTOEoYMZyosoVEXyfDENgrSjdeuloluwHBKjXseajAxoLvSHVtYW5vaWRSb290UGFydA=='))
+		gem.CFrame = Char.CFrame
+	end
+end)
+
+AutoFarm:Button(KEWTtWjYxakypzW('ubiVPdGneZfKftfqIOnchlcflsRJNyiFEBKYCbwmEGtPLlXBrpaVQxuQXV0byBEcmluaw=='), function()
+	while wait(2.34) do
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('cUiQZdCOFikNvFcjNXgRhvBYhseTZcVNOcboLzvefuEeDuWkNoMYkrXU3RhcnRlciBEcmluaw=='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('yuaDcewzSqeLjeXxbUMubfxjAroyqdabxfWVIiGEbfCYucUnOWGQHeTU2Vjb25kIERyaW5r'))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('lsNlFSnonzRnvUqtvVdIwDhanSmWRTATzuGZxztebOoxQbecvcpGPwvVGhpcmQgRHJpbms='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('vgoyvWdOYbxxpnDCvnmjyTUGSEXxFYInPIyHyyoIJYPHuifTJWfuOUvRm91cnRoIERyaW5r'))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('fytMSMbqhxJQKlIrmYoHqeOoDKwRpHZkVPOYLfDDVzcVHdWjIpvKLFRRmlmdGggRHJpbms='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('giqOmREzdnHuyCUuyVfQdWiUhDJrkdgrmsMscQCjkycNCzQyCNLdSjEU2l4dGggRHJpbms='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('yTgrTDtlaKQdrGhMnPoHhzrAMPYJFLWHfmZOYFyYZCLkNADcTHOFkIWU2V2ZW50aCBEcmluaw=='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('kpaZCYqpbNnjjoXinIWXDXtISERrjpXyBOGpjYWNckCUiWRPBlNkwUBRWlnaHRoIERyaW5r'))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('fdkWcKaSmdkrpJDENSUXNAIJuMTMYqyakDLAbkGXccMHcQLhHKycUCiTmludGggRHJpbms='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('orpVZUpwSeXyeumnasWFkzMqCkUEQHZponIBRoUPStuWcYrqUgyVWMMQXRvbWljIERyaW5r'))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('asZYiLLLKAOveOXWipjyuMxQZRZdDjvwVMPVXYSJMbKJJWtnlqSOPYaT21lZ2EgQnVycCBKdWljZQ=='))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('IqhOiEGgCZKByfHZBYYDCPbpCegswFRkbmfeWOQHdKGjkWcieLcdOtWVGh1bmRlciBGaXp6'))
+		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('dAijDKSGtxepmLsiHzSxOROBaKhQEZynfKYDhAFjFKpOyuAFvvKcKHWR2FybGljIEp1aWNl'))
+
+	end
+end)
+
+LocalPlayer:Button(KEWTtWjYxakypzW('hezgCflFRxZpJGyClZJTfyfOtAFAGsIpNAhXzESpAlKbxvGogpYafmoUmVtb3ZlIEZwcyBDYXA='), function()
+	if setfpscap and type(setfpscap) == KEWTtWjYxakypzW('YeeeRmjPllYIunyzPFURCxZbPRcTBzflOROGxJNvbwWlvGguwfWHeezZnVuY3Rpb24=') then
+		local num = 100000 or 1e6
+		if num == KEWTtWjYxakypzW('OwkfpRdcbaEdivHfBVuudNOAaNHkyVBlfEBaceRhFUUaGeNOKyJxMKTbm9uZQ==') then
+			return setfpscap(1e6)
+		elseif num > 0 then
+			return setfpscap(num)
+		end
+	end
+end)
+
+LocalPlayer:Button(KEWTtWjYxakypzW('NdQLWLhWPvyCJEiPHkMplXVWBFCLHssMjJmqkdlYychegirxLlGhzlHV2Fsa1NwZWVk'), function()
+	while wait() do
+		game.Players.LocalPlayer.Character:WaitForChild(KEWTtWjYxakypzW('RyOEAVMTTqTKwfHnfZXJJqPCPxAYGFaywFgOfCPWgnwaHtezjaxCREWSHVtYW5vaWQ=')).WalkSpeed = 700
+	end
+end)
+
+LocalPlayer:Button(KEWTtWjYxakypzW('zjARMnymkGHHmXYoGIsunyJrsVCuroiPukHKSDZhMCeiyLbWjtXDsQxSW5mIEp1bXA='), function()
+	game:GetService(KEWTtWjYxakypzW('iePUwIOnsTiRdvUBYgfykLbnPDTfNJDlSdscYgGwyEHIbnnubEiYrJeVXNlcklucHV0U2VydmljZQ==')).JumpRequest:connect(function()
+		game:GetServiceKEWTtWjYxakypzW('QmofRxlIafFUuzwzcFAGXqTVRnQDcJSNqBvQaZYMVmRBDTLriEuNWwaUGxheWVycw==').LocalPlayer.Character:FindFirstChildOfClassKEWTtWjYxakypzW('ketkcUmoucBGfpSNzgqcZiZfyjrzagrOxLKoUqmdilHDpYBtfbsaHvmSHVtYW5vaWQ='):ChangeState(KEWTtWjYxakypzW('CPOveuVxgEDwtzkRWJWLivotxJuVmDADVZDMPQWgRvkznODjHTdatMWSnVtcGluZw=='))
+	end)
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('gszhRPRTveRefyhaoEomCjMdJdPjFbjnPrhLTDnpSyKfMvQDIgLETbYU2FmZSBab25l'), function()
+	local New_CFrame = CFrame.new(-46, 48, -15)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('upbpXhgFThknJSHutvDFyLiwjawqcrkdewzPDoKnOVtCYwPtZqgHghpVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('fvpepOScSTcQTwsWWDFgfQtqFBrLZxoHxOtdCQjEELcqqyuatCrsKHEUGV0IFNob3A='), function()
+	local New_CFrame = CFrame.new(311, 52, 103)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('GpayLFRfHmpTCXKMptljIGydRiakZFwXMQicgSMXhRnJVKeZvQdIXopVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('DftbvZUnzrwocZOTEYuUMOBfTgkATzEihhFWNmnqDuvtdiQbZhdRRUdRGlzY28gSXNsYW5k'), function()
+	local New_CFrame = CFrame.new(63, 48, 636)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('rXWWUGOuRBSZvoFHCeFYzuhyXfeFKbjJqeysCEWHMdSjUROABcjGMogVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('vMjqhpiBSEOyVsszvvjhvFojMRQRHXtQKnzUMjBcYeNJYQaOVcuHytYQ2xvdWQgT25l'), function()
+	local New_CFrame = CFrame.new(296, 566, 689)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('HoWkkoSNwqrWQshJmfUeOKaBbJtPTbfPXdMRQDKpMUOelHosSatFwbIVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('lmMhIZcvdTXEpIuacwdmffeOHGEXldkQdQUgTwrzdVSEEFazlZnRKWZQ2xvdWQgU2Vjb25k'), function()
+	local New_CFrame = CFrame.new(-1224, 557, -318)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('qxlCpRlsaIyTCsvJxFGxPiBtFfguRHDCeNkLUYdGRCQmsWZxjiAPvVRVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('cZpMZJpQRKQmUZXkimFSuXnXzJgADdHNkFalPNPpuRfuhlaOjLqROaVU2t5IElzbGFuZA=='), function()
+	local New_CFrame = CFrame.new(2132, 1456, -1034)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('NaBFOJmkmxBkJsNElSEXLFAapyuHOQnKzYcQLNCfHIgqbfLiGSBtnpkVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Teleport:Button(KEWTtWjYxakypzW('twMGFkfZIVnEguFhrEHNnuVenPVLLZvdQOvPvlzRqTmUainsBmWxxlMU2t5IElzbGFuZA=='), function()
+	local New_CFrame = CFrame.new(-4467, 44194, -32905)
+
+	local ts = game:GetService(KEWTtWjYxakypzW('wMcYzSlyBqNiEXFeBWuAjTQWNuFiSYpqMwQqOsBDxzdFmfdQTzraMTLVHdlZW5TZXJ2aWNl'))
+	local char = game.Players.LocalPlayer.Character
+
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+
+Misc:Button(KEWTtWjYxakypzW('cGMCynSrbcjvvpUdVuFwBjJxesoWVIRguAdykwBTYvCULnWcJqlufYuUHJlc3RpZ2VfQnA='),
+function()
+
+loadstring(game:HttpGet(KEWTtWjYxakypzW('hCfgMhksgdPNbQygHZomYkXsOhGDaYBpIrElhZnPJhDkaxXGAtEaUYpaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L0NDajB6Q2VE')))()
+end)
+
+Misc:Button(KEWTtWjYxakypzW('kSAnOqJOWinwziSCvRTjVeeDrJpvzRBDjcaNdAZzgaUFFAfHGDCKIKmSW5maW5pdHkgWWllbGQ='), function()
+	loadstring(game:HttpGet(KEWTtWjYxakypzW('dQZoHJeGvYnhuPjStdZuBSqOuiAxjrjMnLVZJLOBadmNzADOHxwmretaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0VkZ2VJWS9pbmZpbml0ZXlpZWxkL21hc3Rlci9zb3VyY2U=')))()
+end)
+
+Misc:Button(KEWTtWjYxakypzW('fnwqdKxztkfIKTIERDxpUiqDnZApRBnzYYxmAYyXAywqvrQrfBolWHPQW50aSBLaWNr'), function()
+	local mt = getrawmetatable(game)
+	local old = mt.__namecall
+	local protect = newcclosure or protect_function
+
+	setreadonly(mt, false)
+	mt.__namecall = protect(function(self, ...)
+		local method = getnamecallmethod()
+		if method == KEWTtWjYxakypzW('rkwrBzWASWjouPincwYlUZhzjPLKsRLYUFZTyikfUzFdpzfZDykzIWNS2ljaw==') then
+			wait(9e9)
+			return
+		end
+		return old(self, ...)
+	end)
+	hookfunction(game.Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+end)
+
+Misc:Button(KEWTtWjYxakypzW('IPCKUSYxTVYifVgzZVsKqpOwFOakEbTyZYpWdEiynXlcdBbYcygLqINQW50aSBBZms='), function()
+	loadstring(game:HttpGet(KEWTtWjYxakypzW('DrxVuQwYcOeQTUlCnMrmyZFpBBtwOVslMjHXxVvWPPdLyJTylchZwrqaHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L0x4dUJ6Zkdw')))()
+end)
+
+Credits:Button(KEWTtWjYxakypzW('XqZEPCBWxhWtAYuRSgJWQHiHpbrqwEIDVNiLZwjLtsyCjYfWnuttXPWTWFkZSBCeSBGbGFzaC9GaXp6IEdpdmVy'))
+
+Credits:Button(KEWTtWjYxakypzW('wpmbAUfUGewRtEwuWVJJzlWeBtgRazQUyLQEvIuKRfDPYZsxwNfZDHMRGlzY29yZDogbm9vYml0b19ib3Q='))
+
+Credits:Button(KEWTtWjYxakypzW('ZXcHuNthuQAWeimUMsbQIYXUHsHPIpBBfSpTLDuYipeFTyUjehAegwvQ29weSBQYXN0ZXJzIEZ1Y2sgWW91cnNlbGY='))
+end
+end    
