@@ -605,7 +605,7 @@ AutoFarm:Button(KEWTtWjYxakypzW('RmNkuEjTujMiWpkNOQcNtPjVziZfghHNNfbCdMryvTaBzOI
 end)
 
 AutoFarm:Button(KEWTtWjYxakypzW('ubiVPdGneZfKftfqIOnchlcflsRJNyiFEBKYCbwmEGtPLlXBrpaVQxuQXV0byBEcmluaw=='), function()
-	while wait(2.34) do
+	while wait(2.35) do
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('cUiQZdCOFikNvFcjNXgRhvBYhseTZcVNOcboLzvefuEeDuWkNoMYkrXU3RhcnRlciBEcmluaw=='))
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('yuaDcewzSqeLjeXxbUMubfxjAroyqdabxfWVIiGEbfCYucUnOWGQHeTU2Vjb25kIERyaW5r'))
 		game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer(KEWTtWjYxakypzW('lsNlFSnonzRnvUqtvVdIwDhanSmWRTATzuGZxztebOoxQbecvcpGPwvVGhpcmQgRHJpbms='))
