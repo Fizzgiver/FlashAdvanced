@@ -641,9 +641,13 @@ LocalPlayer:Button(KEWTtWjYxakypzW('NdQLWLhWPvyCJEiPHkMplXVWBFCLHssMjJmqkdlYyche
 end)
 
 LocalPlayer:Button(KEWTtWjYxakypzW('zjARMnymkGHHmXYoGIsunyJrsVCuroiPukHKSDZhMCeiyLbWjtXDsQxSW5mIEp1bXA='), function()
-	game:GetService(KEWTtWjYxakypzW('iePUwIOnsTiRdvUBYgfykLbnPDTfNJDlSdscYgGwyEHIbnnubEiYrJeVXNlcklucHV0U2VydmljZQ==')).JumpRequest:connect(function()
-		game:GetServiceKEWTtWjYxakypzW('QmofRxlIafFUuzwzcFAGXqTVRnQDcJSNqBvQaZYMVmRBDTLriEuNWwaUGxheWVycw==').LocalPlayer.Character:FindFirstChildOfClassKEWTtWjYxakypzW('ketkcUmoucBGfpSNzgqcZiZfyjrzagrOxLKoUqmdilHDpYBtfbsaHvmSHVtYW5vaWQ='):ChangeState(KEWTtWjYxakypzW('CPOveuVxgEDwtzkRWJWLivotxJuVmDADVZDMPQWgRvkznODjHTdatMWSnVtcGluZw=='))
-	end)
+	-- source
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+    if InfiniteJumpEnabled then
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+    end
+end)
 end)
 
 Teleport:Button(KEWTtWjYxakypzW('gszhRPRTveRefyhaoEomCjMdJdPjFbjnPrhLTDnpSyKfMvQDIgLETbYU2FmZSBab25l'), function()
